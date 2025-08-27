@@ -1,0 +1,418 @@
+
+/*Gabriel Silva Ferreira 3c 27/08/2025*/
+
+:root {
+            --primary-color: #8ecae6;
+            --secondary-color: #219ebc;
+            --accent-color: #ffb4a2;
+            --light-color: #f8f9fa;
+            --dark-color: #1d3557;
+            --transition: all 0.3s ease;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: var(--light-color);
+            color: var(--dark-color);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+            font-weight: 500;
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(248, 249, 250, 0.95);
+            padding: 1.5rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            backdrop-filter: blur(10px);
+        }
+
+        .nav-img {
+            max-height: 60px;
+            border-radius: 50%;
+            transition: var(--transition);
+            border: 2px solid var(--secondary-color);
+        }
+
+        .nav-img:hover {
+            transform: rotate(5deg);
+        }
+
+        .nav-link {
+            color: var(--dark-color) !important;
+            font-weight: 500;
+            margin: 0 15px;
+            position: relative;
+            transition: var(--transition);
+        }
+
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: var(--secondary-color);
+            transition: var(--transition);
+        }
+
+        .nav-link:hover:after {
+            width: 100%;
+        }
+
+        /* Botão Acessibilidade */
+        .menu-acessibilidade {
+            position: relative;
+        }
+
+        .rotacao-botao {
+            background-color: var(--secondary-color) !important;
+            color: white !important;
+            border: none !important;
+            border-radius: 30px;
+            padding: 8px 20px;
+            transition: var(--transition);
+        }
+
+        .rotacao-botao:hover {
+            transform: scale(1.05);
+            background-color: var(--primary-color) !important;
+        }
+
+        .opcoes-acessibilidade {
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            padding: 10px;
+            display: none;
+            flex-direction: column;
+            z-index: 1000;
+            min-width: 150px;
+            border: 1px solid var(--primary-color);
+        }
+
+        .apresenta-lista {
+            display: flex !important;
+        }
+
+        .btn-primary {
+            background-color: var(--secondary-color) !important;
+            border: none !important;
+            margin-bottom: 5px;
+            transition: var(--transition);
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-color) !important;
+            color: var(--dark-color) !important;
+        }
+
+        /* Seção Inicial */
+        #inicio {
+            background: linear-gradient(135deg, var(--light-color) 0%, #e0f0f0 100%);
+            padding: 5rem 0;
+            min-height: 80vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .inicio-fundo {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .esquerda-conteudo {
+            flex: 1;
+            min-width: 300px;
+            padding-right: 2rem;
+        }
+
+        .esquerda-conteudo h1 {
+            font-size: 3.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: var(--secondary-color);
+        }
+
+        .img-inicio {
+            flex: 1;
+            min-width: 300px;
+            max-width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+            transition: var(--transition);
+            border: 5px solid white;
+        }
+
+        .img-inicio:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+        }
+
+        .botao-inicio {
+            background-color: var(--accent-color) !important;
+            color: var(--dark-color) !important;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 600;
+            margin-top: 2rem;
+            transition: var(--transition);
+            border: none;
+        }
+
+        .botao-inicio:hover {
+            background-color: #ff5252 !important;
+            transform: scale(1.05);
+        }
+
+        /* Seção Biografia */
+        #frank {
+            padding: 6rem 0;
+            background-color: #e0f0f0;
+            position: relative;
+            overflow: hidden;
+        }
+
+        #frank:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+        .secao-tropicalia {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .secao-tropicalia img {
+            border-radius: 10px;
+            box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+            transition: var(--transition);
+            max-width: 100%;
+            border: 5px solid white;
+        }
+
+        .secao-tropicalia img:hover {
+            transform: scale(1.03);
+        }
+
+        .secao-tropicalia h2 {
+            color: var(--secondary-color);
+            margin-bottom: 1.5rem;
+            font-size: 2.5rem;
+        }
+
+        .secao-tropicalia p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Galeria */
+        #galeria {
+            padding: 6rem 0;
+            background: linear-gradient(to bottom, var(--primary-color) 0%, #e0f0f0 100%);
+        }
+
+        #galeria h2 {
+            color: var(--dark-color);
+            text-align: center;
+            margin-bottom: 3rem;
+            font-size: 2.5rem;
+        }
+
+        .gallery-row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        .gallery-item {
+            flex: 1;
+            min-width: 300px;
+            max-width: 400px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(33, 158, 188, 0.85);
+            color: white;
+            padding: 15px;
+            transform: translateY(100%);
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-caption {
+            transform: translateY(0);
+        }
+
+        /* Formulário de Contato */
+        #contato {
+            padding: 6rem 0;
+            background: linear-gradient(to bottom, #e0f0f0 0%, var(--primary-color) 100%);
+        }
+
+        .formulario {
+            background: linear-gradient(135deg, var(--light-color) 0%, #e0f0f0 100%);
+            padding: 3rem;
+            border-radius: 15px;
+            box-shadow: 0 15px 35px rgba(0,0,0,0.08);
+        }
+
+        .formulario h2 {
+            color: var(--secondary-color);
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .form-control {
+            border: 1px solid #d1e7e7;
+            border-radius: 8px;
+            padding: 12px 15px;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            border-color: var(--secondary-color);
+            box-shadow: 0 0 0 3px rgba(33, 158, 188, 0.25);
+        }
+
+        textarea.form-control {
+            min-height: 150px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--dark-color);
+            color: white;
+            padding: 3rem 0 1.5rem;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 1rem;
+        }
+
+        footer i {
+            font-size: 1.8rem;
+            margin: 0 15px;
+            color: var(--primary-color);
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        footer i:hover {
+            color: var(--accent-color);
+            transform: translateY(-5px);
+        }
+
+        /* Responsividade */
+        @media (max-width: 992px) {
+            .inicio-fundo {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .esquerda-conteudo {
+                padding-right: 0;
+                margin-bottom: 3rem;
+            }
+            
+            .secao-tropicalia {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .secao-tropicalia > div {
+                margin-bottom: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .nav-item {
+                margin: 10px 0;
+            }
+            
+            .menu-acessibilidade {
+                margin-top: 20px;
+            }
+            
+            .esquerda-conteudo h1 {
+                font-size: 2.5rem;
+            }
+        }
+
+        /* Modo alto contraste */
+        .alto-contraste {
+            --primary-color: #000;
+            --secondary-color: #fff;
+            --accent-color: #ff0;
+            --light-color: #000;
+            --dark-color: #fff;
+            background-color: #000 !important;
+            color: #fff !important;
+        }
+
+        .alto-contraste .btn-primary {
+            background-color: #ff0 !important;
+            color: #000 !important;
+        }
+
+        .alto-contraste .formulario {
+            background-color: #222 !important;
+            color: #fff !important;
+        }
+
+        .alto-contraste .form-control {
+            background-color: #333;
+            color: #fff;
+            border-color: #ff0;
+        }

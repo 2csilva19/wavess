@@ -1,0 +1,181 @@
+
+<!-- Gabriel Silva Ferreira 3c 27/08/2025 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>Frank Ocean</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="p-3">
+        <nav class="container d-flex justify-content-between align-items-center flex-wrap">
+            <img src="img/frank perfil.jpeg" class="nav-img" loading="lazy" alt="Frank Ocean">
+            <ul class="nav mt-3 mt-md-0">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#frank">Sobre</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+            <div id="acessibilidade" class="menu-acessibilidade">
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alternar o contraste de cores"><i class="bi bi-shadows"></i></button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid px-0">
+        <section id="inicio" class="my-0">
+            <div class="container inicio-fundo py-5">
+                <div class="esquerda-conteudo">
+                    <h1 class="fst-italic fw-bold">A voz de uma geração</h1>
+                    <h1 class="display-4 fw-bold mb-4">Frank Ocean</h1>
+                    <p class="lead mb-4">Poeta do R&B contemporâneo, contador de histórias e visionário musical que redefine os limites da expressão artística.</p>
+                    <a href="#frank" class="btn btn-primary btn-lg botao-inicio fw-semibold">Descubra sua arte</a>
+                </div>
+                <img src="img/frank olhando pro nada.jpeg" alt="Frank Ocean" title="Frank Ocean" class="img-fluid img-inicio">
+            </div>
+        </section>
+
+        <section id="frank" class="py-5" tabindex="0" aria-label="Seção sobre Frank Ocean">
+            <div class="container d-flex align-items-center flex-wrap py-5">
+                <div class="col-md-5 d-flex justify-content-center mb-5 mb-md-0">
+                    <img src="img/frank olhando pra tela.jpeg" width="400" height="500" loading="lazy" alt="Frank Ocean com olhar introspectivo">
+                </div>
+                <div class="col-md-7 ps-md-5">
+                    <h2>Frank Ocean: O Poeta do R&B Contemporâneo</h2>
+                    <p class="p-2">
+                        Christopher Francis Ocean, conhecido artisticamente como Frank Ocean, é um cantor, compositor e produtor musical americano. Nascido em 28 de outubro de 1987, Ocean emergiu como uma das vozes mais distintas da música contemporânea com seu álbum de estreia "Channel Orange" (2012), que lhe rendeu um Grammy.
+                    </p>
+                    <p class="p-2">
+                        Seu estilo musical combina R&B alternativo, soul e pop, com letras profundamente pessoais que exploram temas como amor, identidade e melancolia. Em 2016, lançou o aclamado "Blonde", considerado por muitos como uma obra-prima da geração.
+                    </p>
+                    <p class="p-2">
+                        Além de sua música, Ocean é conhecido por seu mistério e raras aparições públicas, o que apenas aumenta o fascínio em torno de sua figura. Sua arte transcende a música, incorporando elementos visuais e narrativos que desafiam convenções.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="galeria" tabindex="0" aria-label="Seção de galeria de imagens de Frank Ocean">
+            <div class="container py-5">
+                <h2 class="text-center">Galeria Iconográfica</h2>
+                <div class="gallery-row mt-5">
+                    <div class="gallery-item">
+                        <img src="img/Frank no show.jpg" loading="lazy" alt="Frank Ocean no show">
+                        <div class="gallery-caption">
+                            <h5>Show ao vivo do frank</h5>
+                            <p>frank no show ao vivo</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="img/capa do album do frank.jpg" loading="lazy" alt="Capa do álbum Blonde">
+                        <div class="gallery-caption">
+                            <h5>Blonde</h5>
+                            <p>Álbum aclamado pela crítica (2016)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="img/Frank no Studio.jpg" loading="lazy" alt="Frank Ocean em estúdio">
+                        <div class="gallery-caption">
+                            <h5>No Estúdio</h5>
+                            <p>Processo criativo do artista</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="gallery-row mt-4">
+                    <div class="gallery-item">
+                        <img src="img/channel orange.jpeg" loading="lazy" alt="Capa do álbum Channel Orange">
+                        <div class="gallery-caption">
+                            <h5>Channel Orange</h5>
+                            <p>Álbum de estreia (2012)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="img/frank capa de revista GQ.jpeg" loading="lazy" alt="Frank Ocean para a revista GQ">
+                        <div class="gallery-caption">
+                            <h5>Revista GQ</h5>
+                            <p>Entrevista rara (2018)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="gallery-item">
+                        <img src="img/frank no met gala.jpeg" loading="lazy" alt="Frank Ocean no Met Gala">
+                        <div class="gallery-caption">
+                            <h5>Met Gala</h5>
+                            <p>Aparição marcante (2021)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <div class="container py-5">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 formulario">
+                        <h2 class="mb-4">Entre em Contato</h2>
+                        <p class="text-center mb-4">Para informações sobre shows, projetos ou parcerias</p>
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-md-6 mb-3 mb-md-0">
+                                    <label for="nome" class="form-label">Nome</label>
+                                    <input type="text" id="nome" name="nome" class="form-control rounded-3" placeholder="Seu nome completo">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" id="email" name="email" class="form-control rounded-3" placeholder="Seu melhor email">
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="assunto" class="form-label">Assunto</label>
+                                <input type="text" id="assunto" name="assunto" class="form-control rounded-3" placeholder="Qual o motivo do contato?">
+                            </div>
+                            <div class="mb-4">
+                                <label for="mensagem" class="form-label">Mensagem</label>
+                                <textarea id="mensagem" name="mensagem" class="form-control rounded-4" rows="4" placeholder="Escreva sua mensagem..."></textarea>
+                            </div>
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-lg rounded-pill py-3">Enviar Mensagem</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-5">
+        <p>Acesse nossas redes:</p>
+        <div class="my-3">
+            <i class="bi bi-spotify"></i>
+            <i class="bi bi-instagram"></i>
+            <i class="bi bi-youtube"></i>
+            <i class="bi bi-apple"></i>
+            <i class="bi bi-twitter-x"></i>
+        </div>
+        <p class="mt-4">Desenvolvido por um aluno do ensino medio do curdo alura.</p>
+    </footer>
+
+</body>
+   
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstr@p5.3.3/dist/js/bootstrap.nundle.min.js" ></script>
+<script src="java.js"></script>
+</html>
